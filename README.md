@@ -11,7 +11,7 @@ It's done using a *whole* [16 lines of code][core] plus some optional `Should*()
 Download
 --------
 
-Latest version: 1.0.0.0
+Latest version: 1.0.1.0
 
 Download .dll for [.NET 2.0][2.0] or [.NET 3.0][3.0]+
 
@@ -24,12 +24,14 @@ I like NUnit.  When I started doing .NET development back in 2005, it was the co
 Although Visual Studio now comes with MSTest, I've found that NUnit still seems to be the conventional testing library 
 for open-source projects.
 
-I have a big problem with NUnit, however.  For the past 3-4 years, I've been writing assertions like this using [RSpec][]:
+I have a problem with [NUnit][], however.  For the past 3-4 years, I've been writing assertions like this using [RSpec][]:
 
     the_number.should == 5
     the_dogs.should include('rover')
 
-That are 2 different styles of writing these types of assertions in NUnit:
+I love the RSpec syntax for making assertions.  It's very natural.
+
+In NUnit, there are 2 different styles that I could use to write similar assertions:
 
     Assert.AreEqual(5, theNumber);
     Assert.Contains("rover", theDogs);
@@ -43,7 +45,7 @@ That's not too bad, right?
 
 Well, when I recently started doing C# full-time again, I didn't mind using Assert.Whatever(expected, actual) or the Assert.That syntax (which reads better, but is very verbose).
 
-But then I realized that the language you use to write your specs is *actually __important!__*  There's a *reason* why BDD frameworks use `Should` instead of `Assert`, even though they do the same things.
+But then I remembered that the language you use to write your specs is *actually __important!__*  There's a *reason* why BDD frameworks use `Should` instead of `Assert`, even though they do the same things.
 
 When you say `something.Should(be in some state)` you're more likely to check for an object's behaviors/states, in my honest opinion.  When you `Assert.AreEqual(foo, bar)` you're more likely to be writing low level "unit tests."
 
@@ -59,7 +61,7 @@ So NUnit.Should was born.
 The Code
 --------
 
-The code is so tiny, I put it here in the README.  Now ... there are also some `Should*()` [helper methods][] available, but this is the main code.
+The code is so tiny that I pasted it right here in the README.  There are also some `Should*()` [helper methods][] available, but this is the main NUnit.Should code.
 
     using System;
     using System.Collections;
@@ -90,9 +92,9 @@ NUnit.Should is released under the MIT license.
 
 [NUnit]:   http://nunit.org
 [RSpec]:   http://rspec.info
-[core]:    #
-[helpers]: # 
+[core]:    https://github.com/remi/NUnit.Should/blob/master/src/NUnit.Should.cs
+[helpers]: https://github.com/remi/NUnit.Should/blob/master/src/HelperMethods.cs
 
-[2.0]:           http://github.com/remi/NUnit.Should/raw/1.0.0.0/bin/Release/NET20/NUnit.Should.dll
-[3.0]:           http://github.com/remi/NUnit.Should/raw/1.0.0.0/bin/Release/NET30/NUnit.Should.dll
-[Browse Source]: http://github.com/remi/NUnit.Should/tree/1.0.0.0
+[2.0]:           http://github.com/remi/NUnit.Should/raw/1.0.1.0/bin/Release/NET20/NUnit.Should.dll
+[3.0]:           http://github.com/remi/NUnit.Should/raw/1.0.1.0/bin/Release/NET30/NUnit.Should.dll
+[Browse Source]: http://github.com/remi/NUnit.Should/tree/1.0.1.0
