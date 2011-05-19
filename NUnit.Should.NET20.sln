@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.Should", "src\NUnit.Should.NET20.csproj", "{072ABDD4-4C65-4921-955A-F07D15F0CEFF}"
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.Should.NET20", "src\NUnit.Should.NET20.csproj", "{072ABDD4-4C65-4921-955A-F07D15F0CEFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.Should.Specs", "spec\NUnit.Should.Specs.NET20.csproj", "{C740B942-D574-49F5-82DB-B65FC45534FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.Should.Specs.NET20", "spec\NUnit.Should.Specs.NET20.csproj", "{C740B942-D574-49F5-82DB-B65FC45534FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
