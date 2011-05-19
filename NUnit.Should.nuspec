@@ -7,12 +7,13 @@
     <description>Adds BDD .Should() assertion syntax to NUnit</description>
     <projectUrl>https://github.com/remi/NUnit.Should</projectUrl>
     <dependencies>
-      <dependency id="NUnit" version="2.5.9.10348" />
+      <dependency id="NUnit" version="2.5.10.11092" />
     </dependencies>
   </metadata>
   <files>
     <file src="bin\Release\NET20\NUnit.Should.dll" target="lib\NET20" />
     <file src="bin\Release\NET30\NUnit.Should.dll" target="lib\NET30" />
+    <file src="bin\Release\NET40\NUnit.Should.dll" target="lib\NET40" />
     <file src="src\**.cs" />
     <file src="README.markdown" />
   </files>
