@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExtensionAttribute.cs" />
     <Compile Include="HelperMethods.cs" />
     <Compile Include="NUnit.Should.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
